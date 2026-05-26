@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 22px 28px;
+  font-size: 16px;
+  color: #333;
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.btn-register {
+  width: 100%;
+  margin-top: 8px;
+  padding: 22px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.btn-register:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+.btn-register:active {
+  transform: translateY(0);
+}
+
+.login-text {
+  margin-top: 60px;
+  font-size: 15px;
+  color: #555;
+}
+
+.login-text a {
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
